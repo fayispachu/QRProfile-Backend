@@ -11,13 +11,13 @@ connectDB();
 
 const app = express();
 
-// ✅ Allowed Frontend URLs
+//  Allowed Frontend URLs
 const allowedOrigins = [
   "http://localhost:5173",              // Local Vite React
   "https://bcziamfayizfx.netlify.app"    // Your deployed frontend
 ];
 
-// ✅ CORS setup
+//  CORS setup
 app.use(cors({
   origin: function (origin, callback) {
     // Allow requests with no origin (like Postman)
@@ -38,9 +38,12 @@ app.use("/api/profile", profileRoutes);
 
 // Test route
 app.get("/", (req, res) => {
-  res.send("✅ QR Profile Server Running 🚀");
+  res.send(" QR Profile Server Running 🚀");
 });
 
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+
+
+
