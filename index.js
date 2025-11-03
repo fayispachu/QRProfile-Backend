@@ -33,13 +33,14 @@ app.use(cors({
 
 // Middleware
 app.use(express.json());
+app.get("/", (req, res) => {
+  res.send(" QR Profile Server Running 🚀");
+});
 // Routes
 app.use("/api/profile", profileRoutes);
 
 // Test route
-app.get("/", (req, res) => {
-  res.send(" QR Profile Server Running 🚀");
-});
+
 
 // Start server
 const PORT = process.env.PORT || 5000;
