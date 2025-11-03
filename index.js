@@ -14,7 +14,7 @@ const app = express();
 // ✅ Allowed Frontend URLs
 const allowedOrigins = [
   "http://localhost:5173",              // Local Vite React
-  "https://your-frontend.vercel.app"    // Your deployed frontend
+  "https://bcziamfayizfx.netlify.app/"    // Your deployed frontend
 ];
 
 // ✅ CORS setup
